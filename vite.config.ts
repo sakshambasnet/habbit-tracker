@@ -11,12 +11,14 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Explicitly configure environment variable loading
+  envDir: path.resolve(__dirname), // Ensure Vite looks for .env files in the project root
+  envPrefix: "VITE_", // Ensure only VITE_ variables are exposed (this is the default)
 }));
