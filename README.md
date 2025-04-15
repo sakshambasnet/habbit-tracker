@@ -14,8 +14,9 @@ A modern frontend application built with **Vite**, **React**, **TypeScript**, **
 ## 📦 Getting Started
 
 ### 1. Clone the Repository
-
+```bash
 git clone https://github.com/your-username/your-repo-name.git
+
 cd your-repo-name 
 
 ## 2. Install Dependencies
@@ -25,6 +26,7 @@ npm install
 Create a .env file in the root of your project and add your Supabase credentials:
 
 VITE_SUPABASE_URL="your-supabase-url"
+
 VITE_SUPABASE_PUBLISHABLE_KEY="your-supabase-key"
 
 ## 4. Start the Development Server
